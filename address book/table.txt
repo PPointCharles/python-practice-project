@@ -1,0 +1,12 @@
+create table if not exists `stuinfo`(
+	`编号` int unsigned not null auto_increment,
+	`姓名` varchar(100) not null,
+	`性别` varchar(5) not null,
+	`年龄` int unsigned not null,
+	`出生日期` date,
+	`手机号码` varchar(20) not null,
+	`邮箱` varchar(40),
+	`住址` varchar(40),
+	`专业` varchar(30),
+	PRIMARY KEY ( `编号`)
+)ENGINE=InnoDB CHARSET=utf8;
